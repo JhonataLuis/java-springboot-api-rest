@@ -30,7 +30,6 @@ public class ClienteRestController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Cliente> buscarPorId(@PathVariable("id") Long id){
-
         return ResponseEntity.ok(clienteService.buscarPorId(id));
     }
 
