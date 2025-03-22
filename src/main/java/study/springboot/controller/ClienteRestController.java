@@ -21,7 +21,9 @@ public class ClienteRestController {
     @Autowired
     private ClienteService clienteService;
 
-    @GetMapping
+   
+    
+    @GetMapping()
     public ResponseEntity<Iterable<Cliente>> buscarTodos(){
         return ResponseEntity.ok(clienteService.buscarTodos());
     }
